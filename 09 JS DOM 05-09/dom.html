@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1">This is para 1</p>
+    <p class="para">This is para 2 </p>
+    <p>This is para 3 </p>
+    <div class="para">
+        <p>This is para 4 </p>
+        <p>This is para 5 </p>
+    </div>
+    <script>
+        // const p = document.getElementById('para1');
+        // const p = document.getElementsByTagName('p');
+        // console.log(p);
+
+        // const p = document.getElementsByClassName('para');
+        // console.log(p[1].children);
+
+        // const p = document.querySelector('p');
+        // const p = document.querySelector('div p');
+        // console.log(p);
+
+        // const p = document.querySelectorAll('div p');
+        // console.log(p);
+        // console.log(document.body);
+        // console.dir(document.body)
+
+
+        const p = document.getElementsByTagName('p');
+        const p1 = document.querySelectorAll('p');
+        console.log(p);
+        console.log(p1);
+
+        const element = document.createElement('p');
+        element.innerText = "Dynamically added para";
+        document.body.append(element)
+
+        console.log('After adding element');
+        console.log(p);
+        console.log(p1);
+
+    </script>
+</body>
+</html>
