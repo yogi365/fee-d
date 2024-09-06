@@ -38,15 +38,6 @@ const salary = [
 ]
 
 function calculateSalary(){
-    employee.forEach(emp=>{
-        const salaryObject = salary.find(salaryObject=> 
-            salaryObject.salaryId == emp.salaryId)
-        let gross = salaryObject.gross.base+salaryObject.gross.hra;
-        let workingSalary = (gross/30)* emp.days;
-        let deduction = salaryObject.deduction.tds + salaryObject.deduction.pf;
-        let totalSalary = workingSalary-deduction;
-        console.log(totalSalary.toFixed(2))
-        
-    })
+
 }
 calculateSalary()
