@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtName"/>
+    <button>Store</button> <br/>
+    <label id="lblName"></label>
+    <script>
+        // document.querySelector('lblName').innerText = sessionStorage.getItem('batchd');
+        // document.querySelector('#lblName').innerText = sessionStorage["batchd"]
+        // document.querySelector('button').addEventListener('click',function(){
+        //     const value = document.querySelector('#txtName').value;
+        //     // sessionStorage.setItem("batchd",value);
+        //     sessionStorage["batchd"]=value;
+        // })
+        // console.log(window);
+
+        // document.querySelector('#lblName').innerText = localStorage["batchd"]
+        // document.querySelector('button').addEventListener('click',function(){
+        //     const value = document.querySelector('#txtName').value;
+        //     // sessionStorage.setItem("batchd",value);
+        //     localStorage["batchd"]=value;
+        // })
+        
+
+        const names = ["a","b","c"];
+        // localStorage.removeItem('names');
+        
+        // document.querySelector('button').addEventListener('click',function(){
+        //     names.push(document.querySelector('#txtName').value);
+        //     localStorage.setItem('names',JSON.stringify(names));
+        //     console.log(JSON.parse(localStorage.getItem('names')));
+        //     console.log(names);
+        // })
+
+        localStorage.setItem("names",JSON.stringify(names));
+        console.log(localStorage.getItem("names"));
+
+
+    </script>
+</body>
+
+</html>

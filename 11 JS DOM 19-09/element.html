@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is a paragraph 1 </p>
+    <p>This is a paragraph 2</p>
+    <p>This is a paragraph 3    </p>
+    <p>This is a paragraph 4    </p>
+    <p>This is a paragraph 5    </p>
+    
+    <script>
+        // const p = document.createElement('p');
+        // p.id="para1";
+        // p.style.fontSize = "48px";
+        // p.innerText = "This is a paragprah";
+        // const p1 = document.createElement('p');
+        // p1.id="para1";
+        // p1.style.fontSize = "48px";
+        // p1.innerText = "This is a paragprah";
+        // document.body.appendChild(p);
+        // document.body.append(p,p1)
+        // document.body.prepend(p)
+
+        const p =document.querySelectorAll('p');
+        p.forEach(para=>{
+            para.addEventListener('click',remove);
+        })
+        function remove(event){
+            event.target.remove();
+        }
+
+    </script>
+</body>
+</html>

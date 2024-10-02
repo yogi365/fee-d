@@ -1,11 +1,13 @@
 const employee = [
     {
         id:1,
+        name:"John",
         days:30,
         salaryId:2
     },
     {
         id:2,
+        name:"Josh",
         days:29,
         salaryId:1
     }

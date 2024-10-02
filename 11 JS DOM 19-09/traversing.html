@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This paragraph is outside of div</p>
+    <div class="outterDiv">        
+        <ol>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ol>
+        <div class="innerDiv">
+            <ul>
+                <li>First    </li>
+                <li>Second    </li>
+                <li>Third    </li>
+                <li>Fourth   </li>
+                <li>Fifth    </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // console.dir(document.body)
+        // const body = document.body
+        // console.log(document.body.childNodes[1])
+        // console.log(body.children[1].children[1].children[0].children[4])
+        const li = document.querySelectorAll('.innerDiv ul li');
+        // console.log(li.parentElement.parentElement.parentElement.parentElement)
+        // console.log(li[1].previousElementSibling);
+        // console.log(li[1].nextElementSibling.nextElementSibling.nextElementSibling)
+        // console.log(li[0].parentElement.parentElement.previousElementSibling.children[0])
+        // console.log(li[0].parentElement.parentElement.previousElementSibling.firstElementChild)
+
+    </script>
+</body>
+</html>
